@@ -1,0 +1,4 @@
+pymupdf>=1.24
+python-pptx>=1.0
+Pillow>=10.0
+lxml>=5.0

@@ -1,0 +1,8 @@
+{
+  "youyou-yisong":                { "name": "悠悠宋",                    "bold": false, "desc": 0.20 },
+  "SourceHanSansCN-Normal":       { "name": "思源黑体 CN Normal",         "bold": false, "desc": 0.288 },
+  "SourceHanSansCN-Light":        { "name": "思源黑体 CN Light",          "bold": false, "desc": 0.288 },
+  "SourceHanSerifCN-Regular":     { "name": "思源宋体 CN",                "bold": false, "desc": 0.286 },
+  "PingFangSC-Ultralight-B5pc-H": { "name": "PingFang SC",               "bold": false, "desc": 0.24 },
+  "SabonLTStd-Bold":              { "name": "Sabon LT Std",              "bold": true,  "desc": 0.228 }
+}

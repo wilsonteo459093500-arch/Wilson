@@ -1,0 +1,202 @@
+{
+  "source": "src.pdf",
+  "slide_size_in": [
+    13.3333,
+    7.5
+  ],
+  "background_px": 3840,
+  "pages": [
+    {
+      "page": 1,
+      "text_boxes": 1,
+      "lines": 1,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1252
+    },
+    {
+      "page": 2,
+      "text_boxes": 9,
+      "lines": 18,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1347
+    },
+    {
+      "page": 3,
+      "text_boxes": 17,
+      "lines": 29,
+      "baked_spans": 1,
+      "bg_format": "jpg",
+      "bg_kb": 1288
+    },
+    {
+      "page": 4,
+      "text_boxes": 1,
+      "lines": 1,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1179
+    },
+    {
+      "page": 5,
+      "text_boxes": 13,
+      "lines": 25,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1251
+    },
+    {
+      "page": 6,
+      "text_boxes": 28,
+      "lines": 84,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1168
+    },
+    {
+      "page": 7,
+      "text_boxes": 3,
+      "lines": 3,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 740
+    },
+    {
+      "page": 8,
+      "text_boxes": 23,
+      "lines": 47,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1347
+    },
+    {
+      "page": 9,
+      "text_boxes": 20,
+      "lines": 26,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1387
+    },
+    {
+      "page": 10,
+      "text_boxes": 2,
+      "lines": 2,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1245
+    },
+    {
+      "page": 11,
+      "text_boxes": 7,
+      "lines": 12,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 965
+    },
+    {
+      "page": 12,
+      "text_boxes": 11,
+      "lines": 15,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1167
+    },
+    {
+      "page": 13,
+      "text_boxes": 6,
+      "lines": 13,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1127
+    },
+    {
+      "page": 14,
+      "text_boxes": 19,
+      "lines": 19,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1090
+    },
+    {
+      "page": 15,
+      "text_boxes": 4,
+      "lines": 9,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1241
+    },
+    {
+      "page": 16,
+      "text_boxes": 5,
+      "lines": 10,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1286
+    },
+    {
+      "page": 17,
+      "text_boxes": 4,
+      "lines": 8,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1238
+    },
+    {
+      "page": 18,
+      "text_boxes": 4,
+      "lines": 5,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1190
+    },
+    {
+      "page": 19,
+      "text_boxes": 7,
+      "lines": 11,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1273
+    },
+    {
+      "page": 20,
+      "text_boxes": 2,
+      "lines": 2,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1294
+    },
+    {
+      "page": 21,
+      "text_boxes": 4,
+      "lines": 6,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 726
+    },
+    {
+      "page": 22,
+      "text_boxes": 2,
+      "lines": 2,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1192
+    },
+    {
+      "page": 23,
+      "text_boxes": 1,
+      "lines": 1,
+      "baked_spans": 0,
+      "bg_format": "jpg",
+      "bg_kb": 1229
+    }
+  ],
+  "fonts": [
+    "PingFang SC Ultralight",
+    "Sabon LT Std",
+    "Source Han Sans CN Light",
+    "Source Han Sans CN Normal",
+    "Source Han Serif CN",
+    "youyou-yisong"
+  ]
+}
