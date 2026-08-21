@@ -1,0 +1,116 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "title": "01 · Cover",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "WhatWeDo.dc.html",
+      "title": "02 · What we do",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Pricing.dc.html",
+      "title": "03 · What it costs",
+      "x": 2400,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Project01.dc.html",
+      "title": "04 · Project 01",
+      "x": 3600,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Project02.dc.html",
+      "title": "05 · Project 02",
+      "x": 0,
+      "y": 1560,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Project03.dc.html",
+      "title": "06 · Project 03",
+      "x": 1200,
+      "y": 1560,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "HowWeWork.dc.html",
+      "title": "07 · How it's held",
+      "x": 2400,
+      "y": 1560,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "NextStep.dc.html",
+      "title": "08 · Come and see",
+      "x": 3600,
+      "y": 1560,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "note-prices",
+      "x": 2400,
+      "y": -300,
+      "w": 460,
+      "text": "价格页已按 5 份 A 系列报价单填实（2 成交 / 2 流失 / 1 跟进）。\n起步价全部有成交单背书；「每空间 RM 16,000」来自两个成交单（15,983 与 15,923，相差 0.4%）。\n\n刻意没印全屋总额 —— 成交样本最高只到 RM 63,692，再往上是外推。让客人自己乘，比替他算一个没验证过的大数字安全。"
+    },
+    {
+      "id": "note-cases",
+      "x": 3600,
+      "y": -300,
+      "w": 460,
+      "text": "三个案例页现在用的是系列展厅图。\n上线前换成本地实拍案例 —— 诊断书 3.4 已经给了 9 个必拍镜头的清单，客户见证的 3 个提问也在第 5 章。\n四行数据和那句客户原话要用真实成交数据填。"
+    },
+    {
+      "id": "note-proof",
+      "x": 2400,
+      "y": 2990,
+      "w": 460,
+      "text": "ENF / F☆☆☆☆ 检测报告在对外发之前要拿到编号。\n两道签署确认（深化图、验收清单）就是 crm/src/constants.js 里的 STAGE_GATES —— 本来就在跑，所以敢写在这里。"
+    },
+    {
+      "id": "note-contact",
+      "x": 3600,
+      "y": 2990,
+      "w": 460,
+      "text": "WhatsApp 号码和 IG handle 待填。\nQR 用的是 invite/ 里现成的导航码。\n\n建议每支广告用不同的 wa.me 预填文本（工具 1-2），这样来源自动带代号。"
+    },
+    {
+      "id": "note-categories",
+      "x": 1200,
+      "y": -300,
+      "w": 460,
+      "text": "图库里只有柜体的图，没有护墙板和隐形门的实拍 —— 拿柜体图冒充这两项是在对客人说谎，所以留成标注清楚的待拍位。\n\n另外这几张看起来更像效果图而不是实拍工地照。真要发给客人，第 5 章那份 9 镜头清单拍一轮，整份的说服力会完全不一样。"
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

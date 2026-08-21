@@ -1,0 +1,1510 @@
+<title>Sail 询盘话术卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap">
+
+<style>
+:root{
+  --ink:#1D241F;
+  --ink-soft:#5C645A;
+  --muted:#6E756C;
+  --ground:#EDEEE9;
+  --surface:#FFFFFF;
+  --surface-2:#F6F7F3;
+  --line:#D7DBD3;
+  --accent:#2D4A3E;
+  --accent-ink:#FFFFFF;
+  --sand:#A87C4F;
+  --go:#3D5A4A;
+  --hold:#B8995A;
+  --stop:#9C6B5C;
+  --shadow:0 1px 2px rgba(29,36,31,.06), 0 8px 24px -12px rgba(29,36,31,.18);
+  --radius:10px;
+  --maxw:840px;
+  --f-display:"Noto Serif SC", Georgia, "Songti SC", serif;
+  --f-body:"Noto Sans SC", system-ui, -apple-system, "PingFang SC", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E7EAE4;
+    --ink-soft:#AEB5AB;
+    --muted:#939A90;
+    --ground:#141813;
+    --surface:#1B211C;
+    --surface-2:#222922;
+    --line:#333B33;
+    --accent:#8FB69F;
+    --accent-ink:#10160F;
+    --sand:#C79A6B;
+    --go:#7FA890;
+    --hold:#CBAE71;
+    --stop:#C08876;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E7EAE4;
+  --ink-soft:#AEB5AB;
+  --muted:#939A90;
+  --ground:#141813;
+  --surface:#1B211C;
+  --surface-2:#222922;
+  --line:#333B33;
+  --accent:#8FB69F;
+  --accent-ink:#10160F;
+  --sand:#C79A6B;
+  --go:#7FA890;
+  --hold:#CBAE71;
+  --stop:#C08876;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:16px;
+  line-height:1.75;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px 88px}
+
+/* ---------- masthead ---------- */
+header.mast{
+  padding:44px 0 26px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.eyebrow{
+  font-family:var(--f-mono);
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sand);
+}
+h1{
+  font-family:var(--f-display);
+  font-weight:700;
+  font-size:clamp(30px,7vw,44px);
+  line-height:1.15;
+  letter-spacing:-.01em;
+  margin:0;
+  text-wrap:balance;
+}
+.dek{margin:0;color:var(--ink-soft);max-width:56ch}
+.globallang{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px;
+  font-size:12.5px;color:var(--muted);
+}
+.glhint{font-size:11.5px;opacity:.8}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* ---------- price setup ---------- */
+.setup{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:20px;
+  margin:24px 0 8px;
+}
+.setup h2{
+  font-family:var(--f-display);font-size:18px;font-weight:600;margin:0 0 4px;
+}
+.setup p.hint{margin:0 0 18px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.grp{margin-bottom:18px}
+.grp:last-of-type{margin-bottom:0}
+.grp-title{
+  font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--sand);margin:0 0 9px;
+}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:12px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{
+  font-family:var(--f-body);font-size:12.5px;color:var(--muted);
+}
+.field label b{font-family:var(--f-mono);color:var(--accent);font-weight:600;font-size:11px;letter-spacing:.06em}
+.field input{
+  font-family:var(--f-mono);font-size:15px;font-weight:500;
+  padding:9px 11px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:var(--surface-2);
+  color:var(--ink);
+  width:100%;
+}
+.field input::placeholder{color:var(--muted);opacity:.7}
+.field input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;background:var(--surface)}
+.setup-foot{
+  margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+  display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;
+  font-size:13px;color:var(--muted);line-height:1.65;
+}
+.setup-foot p{margin:0;flex:1;min-width:220px}
+.layouts{display:flex;flex-wrap:wrap;gap:8px}
+.lbtn{
+  font-family:var(--f-body);font-size:13px;line-height:1.35;text-align:left;
+  padding:9px 13px;border-radius:8px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--ink-soft);cursor:pointer;
+}
+.lbtn b{display:block;font-weight:600;color:var(--ink);font-size:13.5px}
+.lbtn small{color:var(--muted);font-size:11.5px}
+.lbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.lbtn[aria-pressed="true"] b,.lbtn[aria-pressed="true"] small{color:var(--accent-ink)}
+.lbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.calc{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.crow{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:11px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);
+}
+.crow.hit{border-color:var(--go);background:color-mix(in srgb, var(--go) 8%, var(--surface-2))}
+.crow.warn{border-color:var(--stop)}
+.crow .cl{font-size:13.5px}
+.crow .cl small{display:block;color:var(--muted);font-size:11.5px;margin-top:1px}
+.crow .cv{font-family:var(--f-mono);font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.crow.hit .cv{color:var(--go)}
+.crow.warn .cv{color:var(--stop)}
+.cspaces{font-size:12px;color:var(--muted);line-height:1.55;margin:2px 0 0}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;
+  padding:4px 9px;border-radius:999px;
+  border:1px solid var(--line);white-space:nowrap;
+}
+.badge.warn{color:var(--stop);border-color:var(--stop)}
+.badge.ok{color:var(--go);border-color:var(--go)}
+
+/* ---------- section ---------- */
+section{margin-top:46px}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+h2.sec{
+  font-family:var(--f-display);font-weight:600;
+  font-size:clamp(21px,4.6vw,26px);margin:0;letter-spacing:-.01em;
+}
+.sec-note{font-size:13.5px;color:var(--muted);margin:0 0 20px;max-width:62ch;line-height:1.65}
+
+/* ---------- triage ---------- */
+.triage{display:flex;flex-direction:column;gap:9px}
+.tri{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:0 14px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:4px solid var(--bar);
+  border-radius:var(--radius);
+  padding:13px 16px 14px;
+}
+.tri .who{font-family:var(--f-mono);font-size:12.5px;font-weight:600;color:var(--bar);white-space:nowrap;padding-top:2px}
+.tri .what{grid-column:2}
+.tri .name{font-weight:700;font-size:15px}
+.tri .do{font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:2px}
+.tri .verdict{
+  grid-column:2;margin-top:7px;
+  font-family:var(--f-mono);font-size:11.5px;letter-spacing:.05em;color:var(--bar);
+}
+@media (max-width:520px){
+  .tri{grid-template-columns:1fr}
+  .tri .what,.tri .verdict{grid-column:1}
+  .tri .who{padding-bottom:4px}
+}
+
+/* ---------- filter ---------- */
+.filters{
+  display:flex;gap:8px;overflow-x:auto;padding:2px 0 14px;
+  scrollbar-width:none;
+}
+.filters::-webkit-scrollbar{display:none}
+.chip{
+  flex:0 0 auto;
+  font-family:var(--f-body);font-size:13.5px;font-weight:500;
+  padding:7px 14px;border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-soft);
+  cursor:pointer;white-space:nowrap;
+  transition:background .12s ease,color .12s ease,border-color .12s ease;
+}
+.chip:hover{border-color:var(--accent);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- cards ---------- */
+.deck{display:flex;flex-direction:column;gap:16px}
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.card.hide{display:none}
+.card-head{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:15px 17px 12px;
+  border-bottom:1px solid var(--line);
+}
+.card-no{
+  font-family:var(--f-mono);font-size:11.5px;font-weight:600;
+  color:var(--sand);padding-top:3px;white-space:nowrap;
+}
+.card-title{flex:1;min-width:0}
+.card-title h3{
+  font-family:var(--f-display);font-weight:600;font-size:16.5px;margin:0;line-height:1.45;
+}
+.card-when{font-size:13px;color:var(--muted);margin:3px 0 0;line-height:1.55}
+.card-body{padding:16px 17px 8px}
+.script{
+  font-size:15px;line-height:1.9;white-space:pre-wrap;
+  margin:0;font-family:var(--f-body);
+}
+.script[data-lang="en"]{font-size:14.5px;line-height:1.8}
+.script .slot{
+  font-family:var(--f-mono);font-weight:600;font-size:.95em;
+  color:var(--accent);
+  border-bottom:1.5px solid var(--accent);
+  padding-bottom:1px;
+}
+.script .slot.empty{
+  color:var(--stop);border-bottom-color:var(--stop);
+  border-bottom-style:dashed;
+}
+.script .blank{
+  font-family:var(--f-mono);color:var(--muted);
+  border-bottom:1.5px dotted var(--muted);padding:0 .3em;
+}
+.card-foot{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:10px 17px 15px;
+}
+.btn{
+  font-family:var(--f-body);font-size:13.5px;font-weight:500;
+  padding:8px 15px;border-radius:7px;cursor:pointer;
+  border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);
+  transition:opacity .12s ease;
+}
+.btn:hover{opacity:.88}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.langs{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.langs button{
+  font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;
+  padding:8px 12px;border:0;cursor:pointer;
+  background:transparent;color:var(--muted);
+}
+.langs button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink);font-weight:600}
+.langs button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.copied{font-size:12.5px;color:var(--go);font-family:var(--f-mono);letter-spacing:.05em}
+
+/* callout */
+.callout{
+  border:1px solid var(--bar,var(--stop));
+  border-radius:var(--radius);
+  background:var(--surface);
+  padding:16px 18px;
+  margin:20px 0 4px;
+}
+.callout h3{
+  font-family:var(--f-display);font-size:16px;margin:0 0 6px;color:var(--bar,var(--stop));font-weight:600;
+}
+.callout p{margin:0 0 8px;font-size:14px;line-height:1.7;color:var(--ink-soft)}
+.callout p:last-child{margin-bottom:0}
+
+/* checks */
+.checks{display:flex;flex-direction:column;gap:10px}
+.check{
+  display:flex;align-items:baseline;gap:14px;
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 16px;
+}
+.check .num{
+  font-family:var(--f-mono);font-size:19px;font-weight:600;color:var(--accent);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.check .lbl{flex:1;font-size:14.5px;line-height:1.6}
+.check .lbl small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+
+footer{
+  margin-top:52px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--muted);line-height:1.7;
+}
+footer code{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-soft)}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Sail by Riccione Reka · 销售话术</div>
+  <h1>询盘话术卡</h1>
+  <p class="dek">客人正在等你回 WhatsApp 的时候，打开这一页。选一下客人的户型，下面所有话术会自动算好价格，按一下就能复制。</p>
+  <div class="globallang">
+    <span>全部话术语言</span>
+    <span class="langs" id="globalLang">
+      <button data-lang="zh" aria-pressed="false">中文</button>
+      <button data-lang="en" aria-pressed="true">EN</button>
+    </span>
+    <span class="glhint">单张卡片仍可各自切换</span>
+  </div>
+</header>
+<hr class="rule">
+
+<div class="setup">
+  <h2>价格速算</h2>
+  <p class="hint">数字来自 5 份 A 系列报价单。价格由<b>每个空间放多少柜子</b>决定，不是户型 —— 所以先算每空间，再乘空间数。改了会存在这台手机上。</p>
+
+  <div class="grp">
+    <p class="grp-title">每空间系数 · 标价</p>
+    <div class="fields">
+      <div class="field"><label for="pLEAN"><b>精简</b> 只做必要的</label><input id="pLEAN" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pPER"><b>常规</b> 两单成交都在这档</label><input id="pPER" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pFULL"><b>做满</b> 目前 0 成交</label><input id="pFULL" inputmode="numeric" autocomplete="off"></div>
+    </div>
+  </div>
+
+  <div class="grp">
+    <p class="grp-title">按空间起步价 · 标价</p>
+    <div class="fields">
+      <div class="field"><label for="pK"><b>K</b> 厨房（含岛台）</label><input id="pK" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pWK"><b>WK</b> 湿厨</label><input id="pWK" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pW"><b>W</b> 主卧衣柜</label><input id="pW" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pS"><b>S</b> 次卧衣柜／间</label><input id="pS" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pTV"><b>TV</b> 电视柜</label><input id="pTV" inputmode="numeric" autocomplete="off"></div>
+      <div class="field"><label for="pF"><b>F</b> 玄关鞋柜</label><input id="pF" inputmode="numeric" autocomplete="off"></div>
+    </div>
+  </div>
+
+  <div class="grp">
+    <p class="grp-title">客人是什么户型</p>
+    <div class="layouts" id="layoutPicker"></div>
+    <div class="field" style="max-width:200px;margin-top:12px">
+      <label for="pN">空间数（可手改）</label><input id="pN" inputmode="numeric" autocomplete="off">
+    </div>
+    <div class="calc" id="calcOut"></div>
+  </div>
+
+  <div class="setup-foot">
+    <span id="setupState" class="badge ok">已按报价单预填</span>
+    <p>单价表：柜体 RM 1,080 ＋ 柜门 RM 530 ＝ <b>RM 1,610</b>，每 m² 立面（高柜／衣柜）或每延米（底柜／吊柜）。抽屉 RM 765/套・层板 RM 1,055/m²・开放柜 RM 1,630/m²・套装门 RM 2,575/樘。岩板另计，不参与折扣。</p>
+  </div>
+</div>
+
+<div class="callout" style="--bar:var(--hold)">
+  <h3>给区间的两个坑</h3>
+  <p><b>三档一起给，不要只报「常规」那一个数。</b>下限是筛选器，上限是保护 —— 客人最后收到的正式报价一旦超出你给过的上限，前面建立的信任会一次性归零。所以话术里保留了「做很满会到 RM …」这个不封顶的尾巴，别删掉。</p>
+  <p><b>单价表只给自己看。</b>RM 1,610/m² 是内部换算用的，不要报给客人 —— 他会拿去跟别家的「每尺多少钱」比，而别家的尺价通常不含五金、安装、售后。真要讲，必须紧跟一句「我们这个价里含什么」。</p>
+  <p><b>60k 以上没有成交记录。</b>目前成交的最高一单是 RM 63,692。上面算出来超过这个数的，都是按密度外推的 —— 心里有数，别当成已验证的区间讲。</p>
+</div>
+
+</div>
+
+<section>
+  <div class="sec-head"><h2 class="sec">分流规则</h2></div>
+  <p class="sec-note">拿到客人预算之后，先做一次除法：<b>预算 ÷ 想做的空间数 ＝ 每空间预算</b>。照这个数分流，比看总额准得多 —— 两单成交的每空间标价是 15,983 和 15,923，相差 0.4%；两单流失是 28,251 和 27,350。</p>
+  <div class="triage">
+    <div class="tri" style="--bar:var(--go)">
+      <div class="who">≥ 16,000</div>
+      <div class="what">
+        <div class="name">A 类 · 常规档，正常走</div>
+        <div class="do">两单成交都在这个密度。详细报价 → 约展厅。</div>
+      </div>
+      <div class="verdict">约展厅 ✓</div>
+    </div>
+    <div class="tri" style="--bar:var(--go)">
+      <div class="who">12,000–16,000</div>
+      <div class="what">
+        <div class="name">A− 类 · 精简档</div>
+        <div class="do">做得了，但要先讲清取舍：柜子做少一点，还是空间做少一点。说完再约展厅。</div>
+      </div>
+      <div class="verdict">约展厅 ✓（必须先讲取舍）</div>
+    </div>
+    <div class="tri" style="--bar:var(--hold)">
+      <div class="who">8,000–12,000</div>
+      <div class="what">
+        <div class="name">B 类 · 减空间，不减配置</div>
+        <div class="do">别把每个空间都做薄 —— 那样每个地方都不好用。改成先做 1–2 个空间，配置不降，其余以后接。</div>
+      </div>
+      <div class="verdict">先给方案，再约</div>
+    </div>
+    <div class="tri" style="--bar:var(--stop)">
+      <div class="who">&lt; 8,000</div>
+      <div class="what">
+        <div class="name">C 类 · 培育</div>
+        <div class="do">低于最低的单空间起步价。不约旗舰展厅，发单空间介绍 + 案例，礼貌收尾，进 D+90 名单。</div>
+      </div>
+      <div class="verdict">不约展厅 ✕</div>
+    </div>
+    <div class="tri" style="--bar:var(--hold)">
+      <div class="who">问了 2 次不说</div>
+      <div class="what">
+        <div class="name">未定</div>
+        <div class="do">用「二选一问法」（卡 2-4）再问一次；仍不答，按 B 类处理。</div>
+      </div>
+      <div class="verdict">按 B 类走</div>
+    </div>
+  </div>
+
+  <div class="callout" style="--bar:var(--stop)">
+    <h3>出图之前的红线</h3>
+    <p><b>任何一版方案，每空间超过 RM 24,000（约 15 m² 柜体），先停下来跟客人对一次预期，再出图。</b></p>
+    <p>五份报价里，做满档（每空间约 28,000）的三单：两单流失、一单还在跟进。现在的流程是先设计满 → 报价 → 客人消失；这条线把对话提前到出图之前，成本几乎为零。同一个主卧，衣柜做 4.86 m² 和做 39.2 m²，差 5.7 倍 —— 那不是客人要的，是方案默认做满的。</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2 class="sec">话术卡</h2></div>
+  <p class="sec-note">三段式，一段都不能少：<b>① 先给起步价与区间</b>（让客人自己对号入座） → <b>② 讲清价格差在哪三件事</b>（做几个空间／板材五金档次／有没有造型岛台） → <b>③ 反问，必须包含预算</b>。第一条回复里永远不要出现算出来的具体总价。</p>
+
+  <div class="filters" role="group" aria-label="按客人说了什么筛选">
+    <button class="chip" data-f="all" aria-pressed="true">全部</button>
+    <button class="chip" data-f="open" aria-pressed="false">开场</button>
+    <button class="chip" data-f="ask" aria-pressed="false">一问价</button>
+    <button class="chip" data-f="budget" aria-pressed="false">不肯说预算</button>
+    <button class="chip" data-f="low" aria-pressed="false">预算不足</button>
+    <button class="chip" data-f="oneroom" aria-pressed="false">单区客人</button>
+    <button class="chip" data-f="expensive" aria-pressed="false">说太贵</button>
+    <button class="chip" data-f="silent" aria-pressed="false">没回复</button>
+    <button class="chip" data-f="showroom" aria-pressed="false">展厅／预约</button>
+    <button class="chip" data-f="material" aria-pressed="false">材料</button>
+    <button class="chip" data-f="process" aria-pressed="false">流程／报价</button>
+  </div>
+
+  <div class="deck" id="deck"></div>
+</section>
+
+<section>
+  <div class="sec-head"><h2 class="sec">「贵」的五种意思</h2></div>
+  <p class="sec-note">客人说「太贵了」，几乎从来不是在说价格本身。先用一句反问定位，再选卡：<br><b>「我理解 —— 我想问清楚一点，是整体超出预算了，还是您觉得这个价格对应的东西不值？这两个我处理的方式不一样。」</b></p>
+  <div class="triage">
+    <div class="tri" style="--bar:var(--sand)">
+      <div class="who">① 没参照系</div>
+      <div class="what"><div class="do">语气是惊讶不是拒绝 → 用 <b>卡 4-1</b>：拆解 + 使用年限换算。</div></div>
+    </div>
+    <div class="tri" style="--bar:var(--sand)">
+      <div class="who">② 真不够</div>
+      <div class="what"><div class="do">说得出具体数字、语气确定 → 直接走 <b>卡 3-1</b> 局部定制，不要在价格上纠缠。</div></div>
+    </div>
+    <div class="tri" style="--bar:var(--accent)">
+      <div class="who">③ 怕做不好</div>
+      <div class="what"><div class="do">「做不好怎么办」「你们做完就跑了吧」 → <b>卡 4-3</b>：十怕十诺 + 四道关卡。这是最重要的一张。</div></div>
+    </div>
+    <div class="tri" style="--bar:var(--sand)">
+      <div class="who">④ 想砍价</div>
+      <div class="what"><div class="do">「便宜一点啦」 → <b>卡 4-4</b>：减范围，不减价。</div></div>
+    </div>
+    <div class="tri" style="--bar:var(--sand)">
+      <div class="who">⑤ 不是决策人</div>
+      <div class="what"><div class="do">「我回去问问老公／太太」 → <b>卡 4-5</b>：拿下一步时间 + 给可转发的材料。</div></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <h3>用「80% vs 45%」这个数字之前，先确认两件事</h3>
+    <p>一、<b>45% 从哪来？</b>行业报告还是内部估算？说不出来源和统计口径，就不要对客人讲 —— 客人一追问而你答不上来，前面建立的信任会一次性归零。二、<b>80% 怎么算的？</b>分子分母是什么、统计区间多长。</p>
+    <p>在核实之前，卡 4-3 只用「我们自家数字」那一版：讲最近 N 个项目里一次安装通过验收的比例，加上四道关卡的流程图。<b>流程比数字更可信，因为它可以被验证。</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2 class="sec">每周只看三个数字</h2></div>
+  <p class="sec-note">话术改了有没有用，不看感觉，看这三个。数据填在《Sail 询盘追踪表》里，月度看板自动算。</p>
+  <div class="checks">
+    <div class="check">
+      <div class="num">100%</div>
+      <div class="lbl">发出起步价与区间的比例<small>每一个询盘都必须先收到区间，再收到具体报价</small></div>
+    </div>
+    <div class="check">
+      <div class="num">20% → &lt;5%</div>
+      <div class="lbl">「到店才发现太贵」的比例<small>这批人应该在第一条 WhatsApp 就被筛掉，而不是浪费一次展厅接待</small></div>
+    </div>
+    <div class="check">
+      <div class="num">100%</div>
+      <div class="lbl">B／C 类客人收到局部定制方案的比例<small>本来 100% 流失的那批热 leads，至少留住一部分</small></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  配套文件：《询盘转化诊断与优化建议》（2026-08-18）· 《询盘转化工具包》<code>docs/询盘转化工具包.md</code> · 《Sail 询盘追踪表》<code>docs/tools/</code><br>
+  话术里的 <code>__</code> 是需要业务员按客人情况填的（区／房型／空间／年限／材料），不是漏掉的价格。
+</footer>
+
+</div>
+
+<script>
+// 价格模型：空间数 × 每空间系数。数字来自 5 份 A 系列报价单。
+// 柜体 1,080 + 柜门 530 = RM 1,610 / m²（高柜衣柜）或 / 延米（底柜吊柜）
+const SLOTS = ["LEAN","PER","FULL","K","WK","W","S","TV","F","N"];
+const SLOT_LABEL = {
+  LEAN:"精简档每空间", PER:"常规档每空间", FULL:"做满档每空间",
+  K:"厨房起步价", WK:"湿厨起步价", W:"主卧衣柜起步价", S:"次卧衣柜起步价",
+  TV:"电视柜起步价", F:"玄关鞋柜起步价", N:"空间数",
+  TOTAL:"常规档总价", LEANTOTAL:"精简档总价", FULLTOTAL:"做满档总价", MIN:"单空间最低起步价"
+};
+// 预填值 —— 全部有出处，见 docs/询盘转化工具包.md 第 0 章
+const DEFAULTS = {
+  LEAN:"12,000", PER:"16,000", FULL:"28,000",
+  K:"18,500", WK:"8,800", W:"12,800", S:"9,800", TV:"3,900", F:"5,400", N:"7"
+};
+const LAYOUTS = [
+  {id:"c2", name:"Condo 2 房",        sub:"700–900 sqft",     n:4,  spaces:"干厨・主卧・次卧・电视柜"},
+  {id:"c3", name:"Condo 3 房",        sub:"1,000–1,200 sqft", n:7,  spaces:"干厨・湿厨・主卧・次卧×2・电视墙・玄关"},
+  {id:"c4", name:"Condo 3+1／4 房",   sub:"1,200–1,500 sqft", n:8,  spaces:"上面全部 ＋ 储藏"},
+  {id:"t4", name:"2 层排屋",          sub:"20×70・4 房",      n:10, spaces:"玄关・电视墙・干厨・湿厨・洗衣・主卧・次卧×3・储藏"},
+  {id:"s5", name:"Superlink／Semi-D", sub:"5 房 2 层",        n:13, spaces:"上面全部 ＋ 茶水・书房・次卧×4"},
+];
+
+let prices = Object.assign({}, DEFAULTS);
+try {
+  const saved = localStorage.getItem("sail-prices-v3");
+  if (saved) Object.assign(prices, JSON.parse(saved));
+} catch (e) { /* storage unavailable — page still works, values just won't persist */ }
+
+const num = v => { const n = Number(String(v).replace(/[^\d.]/g, "")); return isFinite(n) ? n : 0; };
+const fmt = n => n ? n.toLocaleString("en-US") : "";
+
+// 单空间最低：四个真正能独立成项的空间里取最小（电视柜是加件，玄关太小，不算）
+function minSpace(){
+  const v = ["K","WK","W","S"].map(k => num(prices[k])).filter(n => n > 0);
+  return v.length ? fmt(Math.min(...v)) : "";
+}
+function total(tier){
+  const n = num(prices.N), per = num(prices[tier]);
+  return (n && per) ? fmt(n * per) : "";
+}
+function val(key){
+  if (key === "MIN") return minSpace();
+  if (key === "TOTAL") return total("PER");
+  if (key === "LEANTOTAL") return total("LEAN");
+  if (key === "FULLTOTAL") return total("FULL");
+  return prices[key];
+}
+
+const CARDS = [
+  {
+    id:"1-1", f:["open"],
+    title:"开场 · 客人来问但还没问价",
+    when:"合并原来的四个开场版本。关键改动：把预算做成第 3 问，并加一句说明为什么问 —— 问预算显得是在帮他，而不是在筛他。",
+    zh:`您好 👋🏻 谢谢您联系 Sail by Riccione Reka 😊
+
+我是 Reina，请问怎么称呼您？
+
+我们专做设计主导的全屋定制柜体、护墙板和隐形门 —— 每一个项目都包含设计咨询、空间规划和材料选配。
+
+为了给您对的建议，想先请教三件事：
+1️⃣ 房子在哪个区？什么房型（公寓／排屋）？
+2️⃣ 这次想做哪几个空间的柜子？方便的话发个户型图或现场照片给我，帮助很大 📐
+3️⃣ 这部分您预留的预算大概在哪个范围？
+
+第 3 个问题是为了一开始就把方向给对：有的客户一次把全屋做完，有的先做一两个空间以后再加 —— 两种我们都做，但方案完全不一样，我不想给您错的那一版。`,
+    en:`Hi 👋🏻 Thanks for reaching out to Sail by Riccione Reka 😊
+
+I'm Reina — may I know how to address you?
+
+We specialise in design-led custom cabinetry, wall panels and hidden doors. Every project includes design consultation, space planning and material selection.
+
+So I can advise you properly, may I ask three things:
+1️⃣ Which area is your property in, and what type is it — condo or landed?
+2️⃣ Which spaces are you looking to customise? A floor plan or photos of the area helps a lot 📐
+3️⃣ Roughly what budget range have you set aside for this?
+
+Question 3 is so I point you in the right direction from the start: some clients do the whole home in one go, others start with one or two spaces and add on later. We do both — but the proposals look completely different, and I'd rather not send you the wrong one.`,
+    after:"原版问的是「house area」和「what cabinets」，两个问题都没有预算 —— 这是 70% 报价后不回复的源头。第 3 问不加，后面所有分流规则都无法执行。"
+  },
+  {
+    id:"1-2", f:["open"],
+    title:"开场追问 · 客人说了空间但没给尺寸",
+    when:"原版的「rough size (length & height)」放在开场问，对客人来说太技术了。放到第二轮问，并给三个都可以的选项。",
+    zh:`收到，谢谢您 😊
+
+为了估得准一点，方便给我其中任何一样就行：
+· 那面墙／那个区域大概的长和高
+· 或者现场拍一张照片
+· 或者户型图
+
+哪个方便就发哪个，不用特意去量。`,
+    en:`Noted, thank you 😊
+
+To size it properly, any one of these works:
+· the rough length and height of the wall or area
+· a photo of the space
+· or your floor plan
+
+Whichever is easiest — no need to go and measure specially.`
+  },
+  {
+    id:"1-3", f:["open","showroom"],
+    title:"两条路二选一 · 展厅 vs 线上估价",
+    when:"原版直接给两个选项。改动：先给价格参照再让他选 —— 否则选「线上估价」的人会直接收到一个数字然后消失。",
+    zh:`谢谢您提供的资料 😊
+
+我们通常有两种开始方式：
+
+1️⃣ 展厅参观（需预约）— 在 Setia Alam。可以现场摸到实际的板材和五金，也能一起把设计方向聊清楚。大部分客户觉得这是最快知道我们合不合适的方式。
+2️⃣ 线上初步估价 — 我按您的户型先给一个范围，您可以先看看落点。
+
+不管选哪个，先给您一个参照：厨房从 RM {K} 起，主卧衣柜从 RM {W} 起。整套算下来，大部分客户是每个空间约 RM {PER} —— 您想做几个空间，乘一下就有个数了。
+
+您觉得哪个方式方便？`,
+    en:`Thanks for sharing that 😊
+
+We usually start one of two ways:
+
+1️⃣ Showroom visit (by appointment) — in Setia Alam. You can handle the actual board and hardware, and we'll talk through the design direction together. Most clients find this the fastest way to know whether we're the right fit.
+2️⃣ Online estimate — I'll prepare a starting range based on your layout so you can see where this sits first.
+
+Either way, here's a reference point: a kitchen starts from RM {K}, a master wardrobe from RM {W}. All in, most clients work out to around RM {PER} per space — multiply by however many spaces you'd like to do and you have a rough figure.
+
+Which works better for you?`
+  },
+  {
+    id:"2-1", f:["ask"],
+    title:"客人开门见山问价",
+    when:"最高频，占 PM 的大多数。不报总价，报按空间起步价 + 按房型区间 —— 客人自己会加，自己会对号入座。",
+    zh:`您好，谢谢您对 Sail by Riccione Reka 的关注 🙏
+
+先给您一个参考，方便您判断合不合适。我们按空间报价，最基础的 A 系列配置：
+· 厨房（含岛台） 从 RM {K} 起
+· 主卧衣柜 从 RM {W} 起
+· 次卧衣柜 每间从 RM {S} 起
+· 湿厨 从 RM {WK} 起 · 电视柜 从 RM {TV} 起 · 玄关鞋柜 从 RM {F} 起
+
+整套算下来，大部分客户是 **每个空间约 RM {PER}**。您想做几个空间，乘一下就是大概的数字 —— 例如 {N} 个空间大约 RM {TOTAL}。
+
+价格差最主要就在一件事：**每个空间放多少柜子**。同样一个主卧，衣柜做 5 m² 和做 20 m²，价格差三倍以上。所以我不会先给您一个数字，我想先知道您要的是哪一种。
+
+方便告诉我：
+1️⃣ 房子在哪个区、什么房型？
+2️⃣ 这次想做哪几个空间？
+3️⃣ 这部分预留的预算大概多少？
+
+我按您的情况给一版。`,
+    en:`Hi, thank you for reaching out to Sail by Riccione Reka 🙏
+
+Here's a reference point first, so you can see whether we're a fit. We quote per space, at our base A-series specification:
+· Kitchen (island included) — from RM {K}
+· Master wardrobe — from RM {W}
+· Bedroom wardrobe — from RM {S} each
+· Wet kitchen — from RM {WK} · TV console — from RM {TV} · Entryway shoe cabinet — from RM {F}
+
+All in, most clients work out to roughly **RM {PER} per space**. Multiply by however many spaces you'd like — {N} spaces comes to about RM {TOTAL}.
+
+What moves the number most is one thing: **how much cabinetry goes into each space**. The same master bedroom with a 5 m² wardrobe versus a 20 m² one differs by more than three times. That's why I won't lead with a figure — I'd rather know which of the two you're after.
+
+If you can tell me:
+1. Which area, and what type of property?
+2. Which spaces would you like to do?
+3. Roughly what budget you've set aside
+
+— I'll put together a version for your case.`,
+    after:"发完文字紧跟两样：价格区间卡片那张图，以及下面这张「锚点案例句」。客人会截图转发给家人 —— 这是让你的价格锚定跟着他回家的唯一方式。"
+  },
+  {
+    id:"2-1b", f:["ask","expensive"],
+    title:"锚点案例句 · 紧跟在区间后面",
+    when:"整套话术里最硬的一句。它陈述的是已经发生的事实，不是承诺 —— 所以比任何抽象区间都有说服力。",
+    zh:`跟您户型比较接近的是这一套：__ 房 __ sqft，做了厨房 + 主卧衣帽间 + 电视墙，板材是 __ 档，最后落在 RM __。
+（附 2–3 张照片）
+
+您看看这个配置跟您想要的接不接近？如果差不多，您的落点大概也在这附近。
+要是想做得更满一点或者材料再上一档，我可以给您看另一套。`,
+    en:`The closest project to your layout is this one: a __-room, __ sqft home — kitchen, master wardrobe and TV wall, __ grade board — it came in at RM __.
+(attach 2–3 photos)
+
+Does this spec feel close to what you have in mind? If it does, you'd likely land somewhere around here.
+If you'd want more coverage or a higher material grade, I can show you another one.`,
+    after:"这句话需要 3–5 个真实锚点案例做后盾（户型／做了哪几个空间／板材档次／成交额），最好有照片。素材清单见工具包第 5 章。"
+  },
+  {
+    id:"2-2", f:["ask"],
+    title:"客人只丢了户型图，没说话",
+    when:"别急着算报价。先给参照，再承诺两个工作日出建议。",
+    zh:`收到，谢谢您 🙏 图我先看着。
+
+在我出具体建议之前，先给您一个价格参照：
+这样的户型通常会做 {N} 个空间左右，按大部分客户的密度算，大概 RM {TOTAL}；
+柜子做少一点约 RM {LEANTOTAL}，做很满会到 RM {FULLTOTAL}。
+如果先做单个空间，从 RM {MIN} 起。
+
+您先看看这个范围符不符合您的规划？
+如果合适，我把这份图排一下，两个工作日内给您一版空间建议和更准确的报价。`,
+    en:`Got it, thank you 🙏 I'll take a look at the plan.
+
+Before I put anything specific together, here's a price reference:
+A layout like this usually comes to around {N} spaces. At the density most clients settle on, that's roughly RM {TOTAL} — leaner, about RM {LEANTOTAL}; heavily specified, up to RM {FULLTOTAL}.
+If you'd rather start with a single space, that begins at RM {MIN}.
+
+Does that range fit your plan?
+If it does, I'll work through the layout and come back within two working days with a space proposal and a firmer quotation.`
+  },
+  {
+    id:"2-3", f:["ask","budget"],
+    title:"客人追问「给我一个具体数字」",
+    when:"不要屈服，但要给台阶。把「不给数字」讲成是为客人好，而不是在藏价。",
+    zh:`可以，我一定给您具体数字 —— 但我不想给一个不准的数字让您做判断，那对您没帮助。
+
+要准确，我需要知道三件事：要做哪几个空间、每个空间想做多满、有没有特别的要求。
+在那之前，我能给您最诚实的答案是一条算式：**每个空间约 RM {PER}**。{N} 个空间大约 RM {TOTAL}，做精简一点约 RM {LEANTOTAL}。
+单个空间的话，厨房从 RM {K} 起，主卧衣柜从 RM {W} 起，次卧每间从 RM {S} 起。
+
+这样吧：您告诉我预算大概在哪个量级，我直接告诉您这个预算在我们这里能做到什么程度、以及需不需要调整范围。这样比我瞎报一个数字有用得多。`,
+    en:`Absolutely, I'll get you a specific number — but I don't want to hand you an inaccurate one to make a decision on. That wouldn't help you.
+
+To be accurate I need three things: which spaces, how much cabinetry you want in each, and any specific requirements you have.
+Until then, the most honest answer I can give you is a formula: **about RM {PER} per space**. {N} spaces comes to roughly RM {TOTAL}; leaner, about RM {LEANTOTAL}.
+Per space, a kitchen starts from RM {K}, a master wardrobe from RM {W}, and bedroom wardrobes from RM {S} each.
+
+Here's a better way: tell me roughly what budget you're working with, and I'll tell you straight what that gets you with us, and whether we'd need to adjust the scope. That's far more useful than a number I've guessed at.`
+  },
+  {
+    id:"2-4", f:["budget"],
+    title:"客人不肯说预算 · 二选一问法",
+    when:"开放式问「您预算多少」很少有人答。给两个选项，答题率高得多。",
+    zh:`理解，很多客户一开始也不方便讲 😊
+那我换个问法，您只要选 A 或 B 就行：
+
+A. 想把想做的空间一次做完，每个空间大概能到 RM {PER} 这个量级
+B. 预算比较集中，想先把最重要的一两个空间做好，单个空间从 RM {MIN} 起
+
+两种我们都做，只是方案完全不同，我不想给您错的那一版。`,
+    en:`Understood — a lot of clients aren't ready to share that upfront 😊
+Let me ask it differently. Just pick A or B:
+
+A. You'd like to cover all the spaces in one go, at around RM {PER} per space
+B. Your budget is tighter, and you'd rather do the one or two spaces that matter most, properly — single spaces start from RM {MIN}
+
+We do both — but the proposals are completely different, and I don't want to send you the wrong one.`
+  },
+  {
+    id:"2-5", f:["expensive"],
+    title:"「为什么比别家贵？」",
+    when:"不要说「我们品质好」。说出具体差在哪三处，然后请客人逐项去比。",
+    zh:`这个问题问得对，我直接跟您讲差在哪。
+
+同样叫「定制柜」，价格差通常在三个地方：
+① 板材和五金 —— 我们用的是 __，质保 __ 年，铰链／滑轨是 __
+② 出厂前检验 —— 每一件柜体出厂前有一道检验，不合格不出货
+③ 安装 —— 我们自己的安装团队，不外包给散工
+
+这三样是最容易在报价单上被省掉、但入住两年后最容易出问题的部分。
+我发一份《价格里包含什么》给您，您拿去跟其他报价逐项对 —— 看的是同一件事再比价格才公平。`,
+    en:`Fair question — let me tell you exactly where the difference sits.
+
+Two quotes both labelled "custom cabinetry" usually differ in three places:
+1. Board and hardware — we use __, with a __-year warranty; hinges and runners are __
+2. Pre-delivery inspection — every cabinet is checked before it leaves the factory; it doesn't ship if it fails
+3. Installation — our own installation team, not outsourced to freelance fitters
+
+Those three are the easiest things to quietly leave out of a quotation, and the most likely to cause problems two years after you move in.
+I'll send you our "What's included" sheet — compare it line by line against your other quotes. Once you're comparing the same thing, comparing price is fair.`
+  },
+  {
+    id:"2-6a", f:["silent"],
+    title:"跟进 D+3 · 带一个案例",
+    when:"发了区间之后没回复。最多跟 3 次，每次带一个新东西 —— 不要只发「在吗？」",
+    zh:`Hi __，前几天给您的价格范围，不知道您那边考虑得怎么样？
+
+顺手发一个刚完成的案例给您看看 —— 这套是 __ 房，做了厨房 + 主卧衣帽间 + 电视墙，落在 RM __ 区间。
+您看看这个感觉和您想要的方向接不接近？`,
+    en:`Hi __, just following up on the price range I sent a few days ago — where are you with it?
+
+Here's a project we just completed, in case it helps: a __-room home, kitchen + master wardrobe + TV wall, landing in the RM __ range.
+Does this feel close to the direction you had in mind?`
+  },
+  {
+    id:"2-6b", f:["silent","low"],
+    title:"跟进 D+7 · 给台阶／分流",
+    when:"这一条同时是最后一次筛选：把「价格问题」和「时间问题」分开，两条路都给。",
+    zh:`Hi __，不打扰您太久，就问最后一个问题：
+
+是价格不在您的规划内，还是时间还没到？
+如果是价格 —— 我们有单空间的做法，从 RM {MIN} 起，很多客户先做厨房；
+如果是时间 —— 您告诉我大概什么时候，我到时候再联系您，中间不打扰。`,
+    en:`Hi __, I won't take up more of your time — just one last question:
+
+Is it that the price isn't in your plan, or that the timing isn't right yet?
+If it's price — we do single-space projects starting from RM {MIN}; a lot of clients begin with the kitchen.
+If it's timing — tell me roughly when, and I'll come back to you then. Nothing in between.`
+  },
+  {
+    id:"2-6c", f:["silent"],
+    title:"跟进 D+30 · 低压力，留门",
+    when:"第三次也是最后一次。之后标注「报价后无回复」，转 D+90 培育名单。",
+    zh:`Hi __，Sail by Riccione Reka 这边最近完成了几个 __ 区的案子，随手发给您看看，不用回复 🙂
+什么时候想聊了，随时找我。`,
+    en:`Hi __, we've just wrapped up a few projects around __ — sharing them here, no need to reply 🙂
+Whenever you feel like picking this up again, just message me.`
+  },
+  {
+    id:"3-1", f:["low","expensive"],
+    title:"预算明显不足 → 转局部定制",
+    when:"整套话术里最重要的一条。这批客人现在是 100% 流失。",
+    zh:`谢谢您坦白告诉我，这样我才能给您有用的建议 🙏
+
+我实话实说：以这个预算做全屋，我做不到 Sail by Riccione Reka 该有的品质 —— 要么板材降级、要么工艺打折，那不是您想要的，我也不想让您花这笔钱去后悔。
+
+但有一个做法我很推荐，很多客户就是这么开始的：先做一个空间。
+同样的板材、同样的五金、同样的安装团队，先把您每天用得最多的地方做到位 —— 大部分人从厨房或主卧衣帽间开始，其他空间以后再接着做，出来是一整套，不会不搭。
+
+厨房从 RM {K} 起，主卧衣帽间从 RM {W} 起。
+我发一份介绍和两个真实案例给您看看？看完不合适也没关系，您心里有个数就好。`,
+    en:`Thank you for being straight with me — that's the only way I can give you advice worth anything 🙏
+
+So I'll be straight back: at that budget, I can't deliver a full home at the standard Sail by Riccione Reka should be held to. It would mean downgrading the board or cutting corners on the workmanship — that's not what you want, and I don't want you spending this money and regretting it.
+
+There is something I'd genuinely recommend, and it's how a lot of our clients start: do one space first.
+Same board, same hardware, same installation team — you get the space you use most, done properly. Most people start with the kitchen or the master wardrobe, and add the rest later. It still comes together as one piece; nothing looks mismatched.
+
+A kitchen starts from RM {K}, a master wardrobe from RM {W}.
+Shall I send you the one-pager and two real projects? Even if it's not right for you, at least you'll know where you stand.`,
+    after:"发完必须紧跟《单空间定制》一页纸 + 2 个单空间案例。没有这份素材，这条话术等于空话。"
+  },
+  {
+    id:"3-2", f:["low"],
+    title:"预算在 70–100%（A− 类）· 先讲取舍",
+    when:"这个预算做得了，但必须先说清会怎么取舍，否则落差留到展厅才爆。",
+    zh:`这个预算做全屋是可以的，但我要先跟您讲清楚会怎么取舍，免得到时候有落差：
+
+每空间在 RM {LEAN} 这个量级，通常是二选一：
+A. 空间都覆盖到，但每个空间的柜子做精简一点（该有的都有，不做满墙）
+B. 每个空间照常规做满，但这次先做 __ 个空间，剩下的以后接
+
+我的建议是 B。把每个空间都做薄，结果是每个地方都不太好用；先做少几个、做到位，比全做但都将就强。
+
+两种我都可以给您排一版，您看完再决定。
+要不要约个时间来展厅？现场摸得到板材和五金，比看图片清楚十倍 —— 差别都在手感上。`,
+    en:`That budget can do a full home — but let me be upfront about the trade-off, so there are no surprises later.
+
+At around RM {LEAN} per space, it's usually one of two routes:
+A. Cover every space, but with leaner cabinetry in each — everything you need, without filling every wall
+B. Keep the normal density, but cover __ spaces now and phase the rest
+
+I'd recommend B. Thinning out every space tends to leave all of them slightly not-quite-right; doing fewer spaces properly beats doing all of them at a compromise.
+
+I can put together both and you decide after seeing them.
+Would you like to come to the showroom? You can handle the actual board and hardware — it's ten times clearer than photos. The difference is in how it feels in the hand.`
+  },
+  {
+    id:"3-3", f:["low"],
+    title:"C 类礼貌收尾 · 不成交，但不留负面印象",
+    when:"预算低于起步价一半。不约展厅不是看不起客人，是保护客人。",
+    zh:`明白 🙏 那这次我就不占用您时间去展厅跑一趟了 —— 以这个预算，我怕您来了反而觉得压力大，那不是我想要的。
+
+我发一份《单空间定制》的介绍给您，从 RM {MIN} 起，您留着；
+另外我把我们的《十怕十诺》也发您 —— 就算这次不做我们家，您拿去对照其他厂商问问题，也不会吃亏。
+
+以后什么时候想做了，随时找我，不用客气。`,
+    en:`Understood 🙏 In that case I won't have you make the trip to the showroom this time — at this budget I'd rather not put you in a position where the visit just feels uncomfortable.
+
+Let me send you two things to keep: our single-space guide (starting from RM {MIN}), and our "Ten Concerns, Ten Commitments" sheet. Even if you go with someone else, use it as a checklist when you ask them questions — you'll be better off for it.
+
+Whenever the timing is right, just message me. No pressure at all.`
+  },
+  {
+    id:"3-4", f:["expensive","low"],
+    title:"已经到了展厅才发现太贵 · 救场",
+    when:"现在每月 20% 的客人走到这一步。先认落差，不要急着谈价。",
+    zh:`（先不急着谈价，先认下落差）
+
+我理解，跟您原本的预期差得比较多，对吗？谢谢您还愿意坐下来跟我说。
+
+我不会跟您讲「这个价格很值」这种话 —— 值不值您自己判断。
+我只讲一件事：这个价格里有哪些东西是省不掉的……（拿出《价格里包含什么》一页纸）
+
+那我们来看实际一点的：
+如果这次只做 __（客人最在意的那个空间），从 RM {MIN} 起，配置一样不降。
+您先住进去用一年，其他空间以后再说 —— 反正样式我们这边留档，接得上。
+
+要不要我现在就按这个方向给您排一版？`,
+    en:`(Don't jump to price. Acknowledge the gap first.)
+
+I can see this is quite far from what you had in mind. Thank you for still sitting down and telling me.
+
+I'm not going to tell you it's "worth it" — that's your call, not mine.
+I'll tell you one thing only: which parts of this price can't be taken out… (bring out the "What's included" sheet)
+
+Now, something more practical:
+If we do just the __ this time — the space you care about most — it starts from RM {MIN}, with nothing downgraded.
+Live with it for a year, and we handle the rest later. We keep your specification on file, so it will match.
+
+Want me to work up that version right now?`
+  },
+  {
+    id:"4-1", f:["expensive"],
+    title:"卡 4-1 · 「没参照系」→ 拆解 + 年限换算",
+    when:"客人语气是惊讶，不是拒绝。他要的是一个能理解这个数字的角度。",
+    zh:`我理解 —— 数字单独看确实大。我帮您换个角度看：
+
+这套柜子的设计使用年限是 __ 年。RM __ 摊到 __ 年，大约是一天 RM __。
+您每天开关它十几次，一用十年。
+
+而且这里面不只是柜子：设计、量尺、板材五金、出厂检验、安装、__ 年质保，都在里面。
+坊间报价常常是「柜体价」，安装、五金、售后另外算 —— 加完常常差不了多少，但出了问题找谁，就差很远了。`,
+    en:`I understand — on its own, the number is big. Let me give you another way to look at it.
+
+These cabinets are designed to last __ years. RM __ over __ years works out to roughly RM __ a day.
+You'll open and close them a dozen times a day, for a decade.
+
+And it isn't only the cabinets: design, measurement, board and hardware, factory inspection, installation and a __-year warranty are all inside that figure.
+Quotes elsewhere are often for the carcass alone — installation, hardware and after-sales are billed separately. Add it all up and the totals are usually close. Who you call when something goes wrong is not close at all.`
+  },
+  {
+    id:"4-3", f:["expensive"],
+    title:"卡 4-3 · 「怕做不好」→ 十怕十诺 + 四道关卡 ⭐",
+    when:"最重要的一张卡。素材已经有了，问题只是它有没有在这 10 秒钟被发出去。",
+    zh:`您担心的其实不是价格，是这笔钱花下去到底能不能做好，对吗？
+
+这个担心太合理了 —— 定制这行最大的问题就是：钱付了，柜子还没出来，出来了不对也退不掉。
+
+所以我们把客户最常见的十个担心，一条一条写成了承诺，叫《十怕十诺》 —— 每一条都写清楚：我们做什么、做不到的时候怎么处理。（发出 PDF）
+
+另外给您看我们的四道关卡：量尺 → 深化图确认 → 出厂前检验 → 安装 QC。每一道有人签字。（发出流程图）
+我们内部统计，最近 __ 个项目里有 __% 是一次安装就通过验收、不需要返工的。
+
+您对着这十条问我，哪一条我写得不够清楚，您现在就问。`,
+    en:`What you're worried about isn't really the price — it's whether this money actually buys you a job done right. Am I reading that correctly?
+
+It's a completely fair worry. The core problem with this industry is that you pay before anything exists, and once it's built wrong, you can't return it.
+
+So we took the ten things clients worry about most and wrote a commitment against each one — we call it Ten Concerns, Ten Commitments. Each line says what we do, and what happens if we fail to. (send PDF)
+
+And here's our four-checkpoint process: measurement → detail drawing sign-off → pre-delivery inspection → installation QC. Someone signs off at each one. (send process diagram)
+Across our last __ projects, __% passed handover on the first installation with no rework.
+
+Go through those ten lines and challenge me on any of them — right now, if you like.`,
+    after:"这一版只用自家数字。「马来西亚市场 45%」那个对比数字，在拿到出处和统计口径之前不要对客人讲。"
+  },
+  {
+    id:"4-4", f:["expensive"],
+    title:"卡 4-4 · 「便宜一点啦」→ 减范围，不减价",
+    when:"打折一次，之后每一个客人都会要。把议价转成范围讨论。",
+    zh:`价格我这边真的没有空间 —— 给您打折就等于对之前照原价签的客户不公平，这个我做不到 🙏
+
+但范围我们可以一起调，这个我很乐意帮您想：
+① 这次先做 __ 和 __，__ 以后再做
+② 或者主空间用最高配，次要空间用标准配
+
+您比较在意哪一种？我现在就按那个方向给您重排一版。`,
+    en:`On price I genuinely have no room — discounting for you would be unfair to every client who signed at full price, and I won't do that 🙏
+
+Scope, though, we can absolutely adjust together, and I'm happy to work on it:
+1. Do __ and __ now, and __ later
+2. Or put the top spec in the main spaces and standard spec in the secondary ones
+
+Which of those matters more to you? I'll rework the proposal in that direction right now.`
+  },
+  {
+    id:"4-5", f:["expensive","silent"],
+    title:"卡 4-5 · 「回去跟家人商量」→ 拿时间 + 给弹药",
+    when:"客人回去要复述你的话，而他复述不好。把材料备齐，并约下一次的具体时间。",
+    zh:`应该的，这种事一定要一起决定 👍
+
+那我帮您准备好带回去的东西，免得您回去还要复述：
+① 报价单 +《价格里包含什么》
+② 两个案例（跟您户型接近的）
+③《十怕十诺》
+
+另外请教一下：__（家人）最在意的通常是哪一块？价格、款式，还是耐用度？我针对那一点多补一份材料给您。
+
+那我 __（具体星期几）再跟您确认一次，可以吗？`,
+    en:`Of course — a decision like this should be made together 👍
+
+Let me get everything ready for you to take back, so you're not left retelling it:
+1. The quotation plus our "What's included" sheet
+2. Two projects with a layout close to yours
+3. Ten Concerns, Ten Commitments
+
+One question: what does __ usually care about most — price, style, or durability? I'll add something specific on that point.
+
+And I'll check back with you on __ (name the day). Does that work?`
+  },
+  {
+    id:"4-6", f:["oneroom","low","expensive"],
+    title:"卡 4-6 · 单区客人说「没 budget」→ 先分清是哪一种",
+    when:"单区客人说没预算，九成不是真的没钱，而是三件事之一：报价高过他心里的数／时机没到／礼貌拒绝。三种处理方式完全不同，问清楚再动。",
+    zh:`明白 —— 我想问清楚一点：
+
+是这个数字比您心里预期的高，还是现在这个时间点先不打算做这块？
+
+这两个我建议的做法不一样，所以想先确认一下 🙏`,
+    en:`Understood — let me just check one thing:
+
+Is the figure higher than what you had in mind, or is it more that now isn't the right time for this part?
+
+I'd suggest different things for those two, so I'd rather ask first 🙏`,
+    after:"答得出具体数字 → 用卡 4-7 给缩小版。答「先不打算」→ 直接跳卡 4-8 归档，别再报价。含糊过去、回复变短 → 也走卡 4-8，那是礼貌拒绝。"
+  },
+  {
+    id:"4-7", f:["oneroom","low"],
+    title:"卡 4-7 · 单区 · 给缩小版（不降单价）",
+    when:"只对「报价高过他心里的数」这一种用。同样板材，做少一点 —— 降的是范围不是单价。一旦给了折扣，他之后的全屋单也会来谈价。",
+    zh:`谢谢您说实话，这样我好帮您 👍
+
+单价我这边动不了 —— 打折对之前照原价签的客户不公平。
+但「做多满」是可以调的，而且这块调下来省得比折扣多：
+
+① 同样的板材和五金，内部配置做精简版（拿掉 __、__）
+② 或者这次先做 __ 这一段，剩下的留着以后接着做
+
+两个方向我都可以重排一版给您。您想先看哪一个？`,
+    en:`Thanks for telling me straight — that helps me help you 👍
+
+The unit rate I can't move — discounting would be unfair to everyone who signed at full price.
+But how much cabinetry we build is adjustable, and that saves more than a discount would:
+
+1. Same boards and hardware, simplified internals (drop the __ and __)
+2. Or build just the __ section now and continue the rest later
+
+I can rework either version for you. Which would you like to see first?`,
+    after:"重排的版本要能看出「少了什么」，不要只给一个更小的数字 —— 客人要知道钱省在哪里，不然会以为你本来就在报高。"
+  },
+  {
+    id:"4-8", f:["oneroom","silent","low"],
+    title:"卡 4-8 · 单区 · 归档信（第 10 天，发完就移出跟进名单）",
+    when:"三张卡里回报最高的一张。单区客人真正的价值不是这一单，是两年后的全屋和转介 —— 逼单会把这两样一起烧掉。这封信经常在几个月后把单子自己带回来。",
+    zh:`Hi __，这边先不打扰您了 🙂
+
+报价单我保留着，规格和价格帮您锁到 __ 月底。
+如果之后时间点合适了，或者装修排到这一块，随时 WhatsApp 我 ——
+不用重新量尺、重新报，直接接着走就行。
+
+另外无论做不做，这份《__》给您留着，里面有几个坑，
+就算找别家做也用得上 👍`,
+    en:`Hi __, I'll stop chasing you on this one 🙂
+
+I'm keeping your quotation on file — specs and pricing held until end of __.
+Whenever the timing works, or your renovation reaches this part, just WhatsApp me.
+No need to re-measure or re-quote; we pick up where we left off.
+
+And whether or not you build with us, keep this __ — there are a few pitfalls in it
+that are worth knowing even if you go with someone else 👍`,
+    after:"发完就归档，不再单独跟。之后只做零成本触达：新案例、工地实拍、节日群发。"
+  },
+  {
+    id:"5-1", f:["showroom"],
+    title:"展厅地址 + 营业时间 + 约时间",
+    when:"原来是三条分开的消息。合成一条，最后一定要以「哪天方便」收尾 —— 给地址不问时间，等于把下一步交给客人。",
+    zh:`我们的展厅采预约制 📍
+Sail by Riccione Reka · Setia Alam
+https://maps.app.goo.gl/b8d3J9D1jUZafNNg6
+
+🕘 营业时间：周一至周六 9:00am – 6:00pm（周日休息）
+
+您哪天、大概几点方便？我帮您看一下时段然后确认 😊`,
+    en:`Our showroom is by appointment only 📍
+Sail by Riccione Reka · Setia Alam
+https://maps.app.goo.gl/b8d3J9D1jUZafNNg6
+
+🕘 Monday to Saturday, 9:00am – 6:00pm (closed Sunday)
+
+Which day and roughly what time suits you? I'll check the slot and confirm 😊`
+  },
+  {
+    id:"5-2", f:["showroom"],
+    title:"预约确认",
+    when:"原版的「we kindly appreciate your punctual arrival」读起来像在提醒客人守规矩。改成「这个时段我们留给您了」—— 同样的意思，但是站在客人那一边。",
+    zh:`您的展厅预约已确认 ✨
+
+📅 日期：__
+⏰ 时间：__
+📍 Sail by Riccione Reka
+23-2 Jalan Setia Prima S U13/S, 40170 Shah Alam, Selangor
+Waze：https://waze.com/ul/hw281smx3q
+
+因为是预约制，这个时段我们留给您了，会有专人接待。如果临时有变动，提前跟我说一声就好。
+
+期待见到您 😊
+— Riccione Reka Team`,
+    en:`Your showroom appointment is confirmed ✨
+
+📅 Date: __
+⏰ Time: __
+📍 Sail by Riccione Reka
+23-2 Jalan Setia Prima S U13/S, 40170 Shah Alam, Selangor
+Waze: https://waze.com/ul/hw281smx3q
+
+As visits are by appointment, we've set this slot aside for you and someone will be there to receive you. If anything changes on your end, just let me know in advance.
+
+Looking forward to welcoming you 😊
+— Riccione Reka Team`
+  },
+  {
+    id:"5-3", f:["showroom"],
+    title:"轻推一下 · 邀约展厅",
+    when:"原版是「Would you like to pay a visit?」—— 没有给理由。加一个只有展厅才有的理由：手感。",
+    zh:`要不要找个时间来展厅看看？
+
+板材和五金的差别，说实话照片传达不了，得上手摸 —— 边封、开合的阻尼、表面手感，看图都是一样的，摸过就不一样了。
+
+我帮您安排时间 😊`,
+    en:`Would you like to come by the showroom sometime?
+
+Honestly, the difference in board and hardware doesn't come across in photos — you have to handle it. The edge, the damping when you close a drawer, the surface: they all look identical on screen and feel nothing alike in person.
+
+Happy to arrange a time for you 😊`
+  },
+  {
+    id:"6-1", f:["material"],
+    title:"材料说明 · 简版",
+    when:"客人问「用什么板」时的标准答案。承诺了检测报告就一定要拿得出来。",
+    zh:`这份报价用的是 ENF／F4-star 三聚氰胺板 + PUR 封边 —— 甲醛释放量的最高环保等级。
+
+这是意大利系统家具品牌在用的同一套材料体系：更耐潮、封边密封更好，表面处理经得起时间。
+
+我们也做多层板、饰面板和实木，同样是 ENF／F4-star 等级。您用的那批板的检测报告我可以直接发给您。`,
+    en:`The material in this quotation is ENF / F4-star melamine board with PUR edge banding — the highest eco-grade classification for formaldehyde emission.
+
+It's the same material system Italian system furniture brands build on: better moisture resistance, properly sealed edges, and a finish that holds up over time.
+
+We also work in plywood, veneer and solid wood, all at ENF / F4-star grade. I can send you the test report for the exact board we'd use.`,
+    after:"⚠️ 先跟供应商拿到检测报告编号，写进《价格里包含什么》。承诺了给不出来，比不承诺更伤。"
+  },
+  {
+    id:"6-2", f:["material","expensive"],
+    title:"「三聚氰胺板不是很低档吗？」⭐",
+    when:"原版已经写得很好，改动只有两处：把「用胶比劣质多层板少」改成可验证的标准口径；结尾从「建议您来展厅」改成一个具体的对比动作。",
+    zh:`这个看法在马来西亚很常见，我完全理解它是怎么来的 😊
+
+真正的差别不在「三聚氰胺板 vs 多层板」，而在两件事：基材的密度，和封边工艺。本地很多工厂用低密度基材配基础封边，三聚氰胺板的名声就是这么来的。
+
+我们用的是高密度基材 + PUR 封边，也就是意大利系统家具品牌在用的那一套。实际差在哪：
+· 该耐潮的地方耐潮（厨房、湿区）
+· 边缘密封到位，接缝不会胀、不会脱
+· 五年后看还是对的
+
+至于安全，这个是测出来的、不是说出来的：ENF 和 F☆☆☆☆ 分别是中国和日本标准里最严的甲醛释放等级。您要的话，我把我们要用的那批板的检测报告发给您。
+
+不过老实说，这件事上手最快。您来展厅一趟，我把我们的板和市面上常见的那种放一起，您摸一下边、看一下断面，比我讲十句有用。`,
+    en:`That perception is very common here, and I understand exactly where it comes from 😊
+
+The real difference isn't melamine versus plywood — it's two other things: the density of the core board, and the edge-banding technology. A lot of local factories use low-density board with basic edge finishing, and that's where melamine earned its reputation.
+
+What we use is high-density board with PUR edge banding — the same system Italian system furniture brands build on. In practice:
+· moisture resistance where it actually matters (kitchen, wet areas)
+· edges properly sealed, so no swelling or peeling at the joints
+· a finish that still looks right in year five
+
+On safety, the grade is measured rather than claimed: ENF and F☆☆☆☆ are the strictest formaldehyde-emission classes under the Chinese and Japanese standards respectively. I'm happy to send you the test report for the exact board we'd use.
+
+Honestly though, this one settles fastest by hand. Come to the showroom and I'll put our board next to the common one — feel the edge, look at the cut section. It'll tell you more than anything I can type.`,
+    after:"⚠️「意大利系统家具品牌用同一套材料体系」要准备好 2–3 个能说出口的品牌名，客人一定会追问。答不上来，这句话反而变成扣分项。"
+  },
+  {
+    id:"7-1", f:["ask","process"],
+    title:"正式估价（看过户型图之后）",
+    when:"原版直接给 RM65k–100k 就结束。改动：加上「落在区间哪一段取决于什么」+ 锚点案例 + 报价里包含什么，最后才是下一步。",
+    zh:`让您久等了 😊
+
+按您给的户型，全屋柜体大概会落在 RM __ 到 RM __ 这个范围。
+
+具体落在区间的哪一段，取决于三件事：
+· 做几个空间
+· 板材和五金选哪一档
+· 有没有造型、岛台或特殊五金
+
+给您一个参照：跟您户型最接近的一套是 __ 房 __ sqft，做了厨房 + 主卧衣帽间 + 电视墙，最后落在 RM __。
+
+这个价格涵盖的是完整流程：设计咨询、上门量尺、深化图、板材五金、我们自己团队安装，以及售后。
+
+如果这个范围在您的规划内，下一步就是把设计细化 —— 这一步在展厅做最有效率，可以一起看户型、材料和收口。要不要我帮您看个时间？`,
+    en:`Thanks for your patience 😊
+
+Based on the layout you shared, whole-house cabinetry for this unit would sit in the RM __ to RM __ range.
+
+Where you land inside that range comes down to three things:
+· how many spaces you cover
+· the grade of board and hardware
+· whether there's profiling, an island or specialty hardware
+
+For reference, the closest project we've completed to your layout — a __-room, __ sqft home with kitchen, master wardrobe and TV wall — came in at RM __.
+
+That price covers the full scope: design consultation, site measurement, detailed drawings, materials and hardware, installation by our own team, and after-sales support.
+
+If this range works for you, the next step is going through the design in detail. That's most efficient at the showroom, where we can look at the layout, materials and finishes together. Shall I check a slot for you?`
+  },
+  {
+    id:"7-2", f:["process","showroom"],
+    title:"交期 · 10–14 周",
+    when:"原版对了，补一句把 10–14 周拆开 —— 客人听到「14 周」的第一反应是「怎么那么久」，看到中间有几段就不一样了。",
+    zh:`设计确认之后，到完工大概 10–14 周 😊
+
+中间大致是：深化图确认 → 生产 → 送货与安装。设计定下来之后我会给您具体日期，不是一个笼统的区间。
+
+如果预算范围没问题，我们现在就可以进设计阶段。建议先来一趟展厅 —— 方向一次谈清楚，比来回改几轮快很多。要不要约个时间？`,
+    en:`Once the design is confirmed, the full timeline to completion is about 10–14 weeks 😊
+
+Broadly: detailed drawings and sign-off → production → delivery and installation. Once the design is locked I'll give you specific dates rather than a range.
+
+If the budget range works for you, we can start the design stage now. I'd suggest a showroom visit first — settling the direction in one sitting is much faster than several rounds back and forth. Shall we arrange a time?`,
+    after:"确认一下 10–14 周是否含旺季（年底／农历新年前）。如果旺季会拉长，现在就说，比交期到了才说好。"
+  },
+  {
+    id:"7-3", f:["process"],
+    title:"付款条件",
+    when:"原版只列了三笔钱。改动：在后面补一句每笔钱背后是什么 —— 把付款条件从「我们的要求」变成「你的保障」。",
+    zh:`付款方式：
+· 10% 订金 — 上门量尺、2D 与 3D 图
+· 40% — 开始生产
+· 50% — 安装前 3 天
+
+有两件事值得说明：生产是在您确认并签署深化图之后才开始的；最后交付要等您对照验收清单检查过安装才算结案。也就是说，每一笔款项后面，都对应一件已经经您确认的事。`,
+    en:`Payment terms:
+· 10% deposit — site visit, 2D and 3D drawings
+· 40% — to commence production
+· 50% — 3 days before installation
+
+Two things worth knowing: production only begins after you've signed off on the detailed drawings, and the project is only closed once you've checked the installation against the handover list. Each payment sits behind something you've already approved.`,
+    after:"这两道确认（深化图签署、验收清单签署）就是 Sail CRM 里的 Stage Gate，本来就在跑。既然在跑，就该讲给客人听。"
+  },
+  {
+    id:"7-4", f:["process","expensive"],
+    title:"「柜子是中国生产的？」",
+    when:"原版只有一句陈述。这个问题在本地市场是信任问题，不是事实问题 —— 要主动把「为什么这样安排」讲完。",
+    zh:`这个问题我直接回答您。
+
+柜体在中国生产，设计、量尺、安装和售后全部由马来西亚团队负责。
+
+这是刻意的分工：工厂那边给的是材料体系和加工一致性 —— 这个稳定度，本地小厂做不到；而本地团队的意义是，出事的时候有一个在这里、找得到人、负得起责的团队，不是一个海外的电邮地址。
+
+每一件柜体出厂前有一道检验，到了这边安装还有一道 QC。真出问题，是我们的人来处理，不是让您去跨国索赔。`,
+    en:`Let me answer that directly.
+
+The cabinetry is produced in China; design, site measurement, installation and after-sales are all handled by our Malaysia team.
+
+That split is deliberate. The factory gives us the material system and the machining consistency that small local workshops can't hold. The local team means that when something needs fixing, there's someone here — reachable and accountable — rather than an email address overseas.
+
+Every unit is inspected before it leaves the factory, and again at installation QC here. If something isn't right, it's our team sorting it out, not a claim you file abroad.`,
+    after:"⚠️ 措辞要跟实际情况对上：如果是合作工厂而非自有工厂，就不要暗示是自有的。这一条被拆穿的代价极高。"
+  },
+  {
+    id:"7-5", f:["process"],
+    title:"客人要的是室内设计，不是柜子",
+    when:"原版已经很好。唯一改动：把「以后可以找我们做柜子」变成一个具体的时间点，否则这条线索就断了。",
+    zh:`谢谢您分享项目的情况 😊
+
+我们专做定制柜体和嵌入式木作，不做完整的室内设计。
+
+如果您在找室内设计师，我可以帮您推荐我们长期合作的设计伙伴。等您的室内设计方案定下来，柜体和木作这部分我们很乐意接手 —— 通常在设计师出平面图之后、动工之前介入最顺，那时候尺寸和收口都还改得动。
+
+需要的话跟我说一声，我把联系方式发您。`,
+    en:`Thanks for sharing the details of your project 😊
+
+We specialise in custom cabinetry and built-in joinery rather than full interior design.
+
+If you're looking for an interior designer, I'd be glad to recommend one of our trusted design partners. And once your interior design is settled, we'd be happy to take on the cabinetry and built-in works — the smoothest point to bring us in is after the designer's floor plan but before construction starts, while dimensions and detailing can still be adjusted.
+
+Just say the word and I'll share the contact.`
+  },
+  {
+    id:"7-6", f:["ask","process"],
+    title:"「你们怎么不按尺算？」",
+    when:"原版说了「因为我们是设计主导」。改动：给出不按尺算的实际理由 —— 尺价会把决定品质的东西藏起来。",
+    zh:`我们是按户型和实际要做的柜子报价，不用固定的每尺单价。
+
+原因很实际：每尺单价会把真正决定品质的东西藏起来 —— 基材密度、五金、封边、安装、售后，这些要么在里面要么不在。两份「每尺一样价」的报价，做出来可能是完全不同的两件事。
+
+您把户型图发我，告诉我想做哪些地方，我出一份完整的报价，我们再一起看设计上的选择。`,
+    en:`We quote based on your layout and the cabinets you actually need, rather than a fixed rate per square foot.
+
+The reason is practical: a per-foot rate hides the things that decide what you actually get — core density, hardware, edge sealing, installation and after-sales are each either in or out. Two quotes at the same rate per foot can be very different pieces of work.
+
+Send me your floor plan and what you'd like to do, and I'll prepare a proper quotation so we can go through the design options together.`
+  },
+  {
+    id:"7-7", f:["process"],
+    title:"收 e-invoice 资料",
+    when:"加一句用途说明。客人给 IC 号码会犹豫，说清楚只用于开票就顺很多。",
+    zh:`Hi __ 😊 为了开立账单文件与日后提交 e-invoice，方便给我：
+
+1. 全名（与 IC 一致）
+2. IC 号码
+
+这两项只用于发票文件，不作其他用途。`,
+    en:`Hi __ 😊 For issuing billing documents and submitting the e-invoice later, could I have:
+
+1. Full name (as per IC)
+2. IC number
+
+These are used only for the invoicing documents, nothing else.`
+  }
+];
+
+// 客人多数用英文，所以整页默认英文；顶部可以一键切成中文，单张卡也能各自切
+const DEFAULT_LANG = "en";
+const deck = document.getElementById("deck");
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const TOKEN = /\{(LEANTOTAL|FULLTOTAL|TOTAL|LEAN|FULL|PER|WK|TV|MIN|K|W|S|F|N)\}/g;
+
+function render(text){
+  // blanks first, then price slots — otherwise the "__ (K)" inside an unfilled
+  // slot gets wrapped a second time as a blank
+  return esc(text)
+    .replace(/(^|[^_])__(?!_)/g, (m, pre) => `${pre}<span class="blank">__</span>`)
+    .replace(TOKEN, (_, k) => {
+      const v = val(k);
+      return v
+        ? `<span class="slot">${esc(v)}</span>`
+        : `<span class="slot empty" title="尚未填写${SLOT_LABEL[k]}">__ (${k})</span>`;
+    });
+}
+function plain(text){
+  return text.replace(TOKEN, (_, k) => val(k) || `__ (${k})`);
+}
+
+CARDS.forEach(c => {
+  const el = document.createElement("article");
+  el.className = "card";
+  el.dataset.f = c.f.join(" ");
+  el.innerHTML = `
+    <div class="card-head">
+      <div class="card-no">${c.id}</div>
+      <div class="card-title">
+        <h3>${esc(c.title)}</h3>
+        <p class="card-when">${esc(c.when)}</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="script" data-lang="zh"></p>
+      ${c.after ? `<p class="card-when" style="margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line)">↳ ${esc(c.after)}</p>` : ""}
+    </div>
+    <div class="card-foot">
+      <button class="btn" data-copy>复制这段</button>
+      <span class="langs">
+        <button data-lang="zh" aria-pressed="false">中文</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </span>
+      <span class="copied" hidden>已复制 ✓</span>
+    </div>`;
+  deck.appendChild(el);
+
+  const p = el.querySelector(".script");
+  const copied = el.querySelector(".copied");
+  let lang = DEFAULT_LANG;
+
+  const paint = () => {
+    p.dataset.lang = lang;
+    p.innerHTML = render(c[lang]);
+    el.querySelectorAll(".card-foot .langs button").forEach(x =>
+      x.setAttribute("aria-pressed", String(x.dataset.lang === lang)));
+  };
+  paint();
+  el._paint = paint;
+  el._setLang = (l) => { lang = l; paint(); };
+
+  el.querySelectorAll(".card-foot .langs button").forEach(b => {
+    b.addEventListener("click", () => el._setLang(b.dataset.lang));
+  });
+
+  el.querySelector("[data-copy]").addEventListener("click", async () => {
+    const text = plain(c[lang]);
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+      ta.remove();
+    }
+    copied.textContent = ok ? "已复制 ✓" : "复制不了 — 长按选取文字";
+    copied.style.color = ok ? "var(--go)" : "var(--stop)";
+    copied.hidden = false;
+    setTimeout(() => { copied.hidden = true; }, 2200);
+  });
+});
+
+// ---- 全局语言切换 ----
+document.querySelectorAll("#globalLang button").forEach(b => {
+  b.addEventListener("click", () => {
+    const l = b.dataset.lang;
+    document.querySelectorAll("#globalLang button").forEach(x =>
+      x.setAttribute("aria-pressed", String(x.dataset.lang === l)));
+    document.querySelectorAll(".card").forEach(c => c._setLang && c._setLang(l));
+  });
+});
+
+// ---- filters ----
+document.querySelectorAll(".chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    const f = chip.dataset.f;
+    document.querySelectorAll(".chip").forEach(c =>
+      c.setAttribute("aria-pressed", String(c === chip)));
+    document.querySelectorAll(".card").forEach(card => {
+      card.classList.toggle("hide", f !== "all" && !card.dataset.f.split(" ").includes(f));
+    });
+  });
+});
+
+// ---- 价格输入 + 户型速算 ----
+const stateEl = document.getElementById("setupState");
+const calcEl  = document.getElementById("calcOut");
+const pickEr  = document.getElementById("layoutPicker");
+let picked = null;
+
+LAYOUTS.forEach(L => {
+  const b = document.createElement("button");
+  b.className = "lbtn"; b.type = "button"; b.dataset.id = L.id;
+  b.setAttribute("aria-pressed", "false");
+  b.innerHTML = `<b>${L.name}</b><small>${L.sub} · ${L.n} 个空间</small>`;
+  b.addEventListener("click", () => {
+    picked = L;
+    document.querySelectorAll(".lbtn").forEach(x =>
+      x.setAttribute("aria-pressed", String(x.dataset.id === L.id)));
+    prices.N = String(L.n);
+    document.getElementById("pN").value = prices.N;
+    save(); refreshState();
+  });
+  pickEr.appendChild(b);
+});
+
+function save(){
+  try { localStorage.setItem("sail-prices-v3", JSON.stringify(prices)); } catch (e) {}
+}
+
+function refreshState(){
+  const n = num(prices.N);
+  const rows = [
+    ["LEAN", "精简", "只做必要的", ""],
+    ["PER",  "常规", "两单成交都在这档 ✓", "hit"],
+    ["FULL", "做满", "目前 0 成交：2 单流失、1 单跟进中", "warn"],
+  ];
+  calcEl.innerHTML = (picked ? `<p class="cspaces">${picked.name} · 通常做：${picked.spaces}</p>` : "")
+    + rows.map(([k, name, note, cls]) => {
+        const per = num(prices[k]);
+        return `<div class="crow ${cls}">
+          <span class="cl">${name} · 每空间 RM ${fmt(per)}<small>${note}</small></span>
+          <span class="cv">${n && per ? "RM " + fmt(n * per) : "—"}</span>
+        </div>`;
+      }).join("");
+
+  const missing = SLOTS.filter(k => !prices[k]);
+  if (missing.length === 0){
+    stateEl.textContent = n ? `${n} 个空间 · 常规档 RM ${total("PER")}` : "价格表已填好 ✓";
+    stateEl.className = "badge ok";
+  } else {
+    stateEl.textContent = `还差 ${missing.join(" / ")}`;
+    stateEl.className = "badge warn";
+  }
+  document.querySelectorAll(".card").forEach(c => c._paint && c._paint());
+}
+
+SLOTS.forEach(k => {
+  const input = document.getElementById("p" + k);
+  input.value = prices[k];
+  input.placeholder = DEFAULTS[k] || "";
+  input.addEventListener("input", () => {
+    prices[k] = input.value.trim();
+    if (k === "N") {
+      picked = null;
+      document.querySelectorAll(".lbtn").forEach(x => x.setAttribute("aria-pressed", "false"));
+    }
+    save(); refreshState();
+  });
+});
+refreshState();
+</script>

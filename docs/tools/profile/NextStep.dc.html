@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&amp;family=Noto+Sans+SC:wght@400;500&amp;display=swap">
+  <style>
+    :root {
+      --paper: #F4F0E8; --paper-2: #EDE7DA; --paper-3: #E5DDCC;
+      --night: #1B1815; --night-2: #262220;
+      --ink: #24211D; --ink-soft: #6E675B; --ink-faint: #9A9184;
+      --line: #DBD2C1; --line-soft: #E6DFD1;
+      --gold: #C08A3E; --amber: #E1913F; --amber-soft: #F2C9A0;
+      --serif: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+      --sans: "Noto Sans SC", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--sans); }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--amber); }
+    .board {
+      position: relative; width: 1080px; height: 1350px; overflow: hidden;
+      background: var(--paper); color: var(--ink);
+      font-size: 26px; line-height: 1.8; letter-spacing: .01em;
+    }
+    .grain {
+      position: absolute; inset: 0; z-index: 9; pointer-events: none;
+      opacity: .5; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+    }
+    .pad { position: relative; z-index: 2; height: 100%; padding: 84px 78px; display: flex; flex-direction: column; }
+    .eyebrow {
+      font-size: 19px; letter-spacing: .34em; text-transform: uppercase;
+      color: var(--gold); font-weight: 500; margin: 0 0 30px;
+      display: flex; align-items: center; gap: 18px;
+    }
+    .eyebrow .bar { width: 42px; height: 1px; background: currentColor; opacity: .6; flex: none; }
+    .display {
+      font-family: var(--serif); font-weight: 400; letter-spacing: .01em;
+      font-size: 74px; line-height: 1.16; margin: 0 0 26px; text-wrap: balance;
+    }
+    .sub {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 42px; line-height: 1.34; margin: 0 0 16px;
+    }
+    .lede { font-size: 27px; line-height: 1.72; color: var(--ink-soft); margin: 0; }
+    .small { font-size: 22px; line-height: 1.65; color: var(--ink-soft); }
+    .tiny { font-size: 19px; line-height: 1.6; color: var(--ink-faint); letter-spacing: .04em; }
+    .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+    .ph { color: var(--gold); font-weight: 500; white-space: nowrap; }
+    .num { font-variant-numeric: tabular-nums; }
+    .grow { flex-grow: 1; }
+    .foot {
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      font-size: 18px; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-faint);
+    }
+  </style>
+</helmet>
+<div class="board">
+  <div style="position:absolute;top:0;left:0;right:0;height:470px;overflow:hidden;background:var(--paper-3)"><img src="showroom.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block"></div>
+  <div class="pad" style="padding-top:518px;padding-bottom:64px">
+    <p class="eyebrow"><span class="bar"></span>Come and see</p>
+    <h2 class="display" style="font-size:58px;max-width:20ch;margin-bottom:18px">The material decides it. Photographs never do.</h2>
+    <p class="lede" style="font-size:24px;max-width:52ch">Handle the board, close a drawer, look at a colour under real light. Ten minutes in the gallery tells you more than any quotation. Visits are by appointment, so the time is yours.</p>
+    <div class="grow"></div>
+    <div style="display:grid;grid-template-columns:1fr 196px;gap:42px;align-items:end">
+      <div>
+        <hr class="rule" style="margin-bottom:28px">
+        <p style="font-family:var(--serif);font-size:32px;line-height:1.3;margin:0 0 8px">Sail by Riccione Reka, Setia Alam</p>
+        <p class="small" style="margin:0 0 20px">23-2 Jalan Setia Prima S U13/S, 40170 Shah Alam, Selangor</p>
+        <div style="display:flex;gap:44px;flex-wrap:wrap">
+          <div>
+            <p class="tiny" style="text-transform:uppercase;letter-spacing:.22em;margin:0 0 6px">By appointment</p>
+            <p class="small" style="color:var(--ink);margin:0">Mon&ndash;Sat, 9:00am &ndash; 6:00pm</p>
+          </div>
+          <div>
+            <p class="tiny" style="text-transform:uppercase;letter-spacing:.22em;margin:0 0 6px">WhatsApp</p>
+            <p class="small" style="color:var(--ink);margin:0"><span class="ph">[+60 xx-xxx xxxx]</span></p>
+          </div>
+          <div>
+            <p class="tiny" style="text-transform:uppercase;letter-spacing:.22em;margin:0 0 6px">Instagram</p>
+            <p class="small" style="color:var(--ink);margin:0"><span class="ph">[@handle]</span></p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+        <img src="qr.png" alt="Navigate to the gallery" style="width:168px;height:168px;display:block">
+        <span class="tiny" style="letter-spacing:.2em;text-transform:uppercase">Navigate</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)">
+      <img src="logo-sail.png" alt="Sail by Riccione Reka" style="height:44px;width:auto;opacity:.85">
+      <img src="logo-rr.png" alt="Riccione Reka" style="height:26px;width:auto;opacity:.7">
+    </div>
+  </div>
+  <div class="grain"></div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
